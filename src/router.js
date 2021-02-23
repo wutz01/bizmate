@@ -9,10 +9,9 @@ const routes = [
     component: () => import(/* webpackChunkName: 'app-weather' */ '@/views'),
     redirect: '/forecast',
     children: [
-      { path: 'forecast', name: 'forecast', component: () => import(/* webpackChunkName: 'weather' */ '@/views/forecast') },
-      { path: 'ui', name: 'ui', component: () => import(/* webpackChunkName: 'weather' */ '@/views/ui') }
+      { path: 'forecast', name: 'forecast', component: () => import(/* webpackChunkName: 'weather' */ '@/views/forecast') }
     ]
-  },
+  }
   // { path: '/', name: 'home', component: () => import('@/App') }
 ]
 
